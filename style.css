@@ -1,0 +1,421 @@
+/* Configuração geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+
+    padding: 30px;
+
+    border-bottom: 5px solid #ff69b4;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 40px;
+
+    margin: 0;
+}
+
+
+/* Navegação */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ff69b4;
+}
+
+
+/* Seções */
+
+section {
+    background-color: white;
+
+    width: 80%;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+}
+
+
+/* Hero */
+
+.hero {
+    text-align: center;
+
+    background-color: #ffe6f2;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+
+/* Imagem da empresa */
+
+#empresa img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    margin: 20px auto;
+
+    border: 4px solid #ff69b4;
+
+    border-radius: 10px;
+}
+
+
+/* Empresa */
+
+.empresa-info {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.info-box {
+    flex: 1;
+
+    padding: 20px;
+
+    background-color: #ffe6f2;
+
+    border: 1px solid #ff69b4;
+
+    border-radius: 10px;
+}
+
+.info-box h3 {
+    color: #d63384;
+
+    text-align: center;
+}
+
+.info-box ul {
+    padding-left: 20px;
+}
+
+
+/* Texto centralizado */
+
+.texto-centro {
+    text-align: center;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1;
+
+    background-color: white;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.card:hover {
+    border-color: #ff69b4;
+}
+
+.card img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #d63384;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.card a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 10px 15px;
+
+    background-color: #ff69b4;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #d63384;
+}
+
+
+/* Listas */
+
+ul,
+ol {
+    line-height: 2;
+}
+
+
+/* Tabela */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+th {
+    background-color: #ff69b4;
+
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Links */
+
+a {
+    color: #d63384;
+}
+
+nav a {
+    color: white;
+}
+
+
+/* Formulário */
+
+form {
+    width: 100%;
+
+    margin-top: 25px;
+}
+
+.box-input {
+    margin-bottom: 20px;
+}
+
+.box-input label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+/* Estrela dos campos obrigatórios */
+
+.obrigatorio {
+    color: red;
+
+    font-weight: bold;
+}
+
+
+.box-input input,
+.box-input select,
+.box-input textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #999;
+
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+}
+
+.box-input input:focus,
+.box-input select:focus,
+.box-input textarea:focus {
+    border-color: #ff69b4;
+
+    outline: none;
+}
+
+.box-input textarea {
+    height: 150px;
+
+    resize: vertical;
+}
+
+
+/* Botão */
+
+.form-button {
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+.form-button button {
+    background-color: #ff69b4;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 30px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.form-button button:hover {
+    background-color: #d63384;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ff69b4;
+
+    margin: 0 10px;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    nav a {
+        display: block;
+
+        margin: 10px 0;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .empresa-info,
+    .cards {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+}
